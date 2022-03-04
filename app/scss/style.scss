@@ -1,0 +1,174 @@
+@import "global";
+@import "var";
+@import "vendor";
+@import "fonts";
+
+.header-btn {
+    position: absolute;
+    display: none;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    z-index: 11;
+}
+
+.header-btn__line {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+.header-btn__line:nth-child(1) {
+    top: 10px;
+}
+
+.header-btn__line:nth-child(3) {
+    bottom: 10px;
+}
+
+.header {
+    /* Верхнее меню начало */
+    &-top {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &-top__link {
+        margin-right: auto;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
+
+    &-nav__link:not(:last-child) {
+        margin-right: 45px;
+    }
+
+    &-nav__link {
+        transition: color 0.3s ease-in-out;
+    }
+    &-nav__link:hover {
+        color: #fff;
+    }
+    &-top__phone {
+        margin-left: auto;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        transition: color 0.3s ease-in-out;
+    }
+    &-top__phone:hover {
+        color: #fff;
+    }
+    /* Верхнее меню конец*/
+
+
+    /* Главный header */
+    background-color: #0ba397;
+    overflow: hidden;
+    position: relative;
+    &-container {
+        background-image: url("../images/car-1.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: 700px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__box-image {
+        position: relative;
+        bottom: -10px;
+        right: 150px;
+    }
+
+    &__box-img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    &__box-svg {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: 22%;
+        right: 50%;
+        z-index: 10;
+    }
+    &__box-image::after {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        bottom: 15%;
+        right: 42%;
+        border-radius: 50%;
+        background-color: #1f7780;
+        z-index: 2;
+    }
+
+    &__box-image::before {
+        content: "";
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        bottom: 15%;
+        right: 42%;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: 1;
+        opacity: 0.7;
+        animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        100% {
+            transform: scale(1.4);
+            opacity: 0;
+        }
+    }
+
+    &__info {
+        max-width: 480px;
+        margin-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    &__info-title {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 68px;
+        margin-bottom: 20px;
+    }
+
+    &__info-subtext {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 185px;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 30px;
+    }
+    &__icon:not(:last-child) {
+        margin-right: 130px;
+    }
+
+    
+}
+
+/* Главный header конец */
+@import "media";

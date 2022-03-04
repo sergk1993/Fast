@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fast</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
 
 
-    <script src="js/main.min.js" ></script>
+
+    <header class="header">
+        <div class="container header-container">
+
+            <div class="header-top">
+                <a class="header-top__link" >Fast</a>
+                <nav class="header-nav">
+                    <a class="header-nav__link" href="#">Цены</a>
+                    <a class="header-nav__link" href="#">Автопарк</a>
+                    <a class="header-nav__link" href="#">Отзывы</a>
+                    <a class="header-nav__link" href="#">Контакты</a>
+                </nav>
+                <a class="header-top__phone" href="tel:88000801213">8(800)-080-12-13</a>
+                <button class="header-btn" aria-label="Кнопка выезжающего меню">
+                    <span class="header-btn__line"></span>
+                    <span class="header-btn__line"></span>
+                    <span class="header-btn__line"></span>
+                </button>
+            </div>
+            <div class="header__wrapper">
+                <div class="header__info">
+                    <h1 class="header__info-title">Квартирные переезды</h1>
+                    <p class="header__info-subtext">По Москве и области</p>
+                    <div class="header__icons">
+                        <svg class="header__icon">
+                            <use xlink:href="images/sprite.svg#icons-1"></use>
+                        </svg>
+
+                        <svg class="header__icon">
+                            <use xlink:href="images/sprite.svg#icons-2"></use>
+                        </svg>
+
+                        <svg class="header__icon">
+                            <use xlink:href="images/sprite.svg#icons-3"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__box-image">
+                    <img class="header__box-img" src="./images/header-bg-1.png" alt="Мужчина с коробкой">
+                    <a href="tel:88000801213">
+                        <svg class="header__box-svg" aria-label="иконка позвонить">
+                            <use xlink:href="images/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <button class="header__sub-btn btn-style">Заказать</button>
+        </div>
+    </header>
+
+
+
+
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>
