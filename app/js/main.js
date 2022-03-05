@@ -5,7 +5,3 @@ headerBtn.addEventListener('click', function() {
     this.classList.toggle('active-btn');
     hideNavMenu.classList.toggle('active-nav');
 });
-
-
-
-

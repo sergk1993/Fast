@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cайт компании по перевозке грузов">
     <title>Fast</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
@@ -16,7 +17,6 @@
 
     <header class="header">
         <div class="container header-container">
-
             <div class="header-top">
                 <a class="header-top__link" >Fast</a>
                 <nav class="header-nav">
@@ -51,18 +51,22 @@
                     </div>
                 </div>
                 <div class="header__box-image">
-                    <img class="header__box-img" src="./images/header-bg-1.png" alt="Мужчина с коробкой">
-                    <a href="tel:88000801213">
+                    <picture class="header__box-img">
+                        <source srcset="images/header-bg-1.webp" type="image/webp">
+                        <img src="images/header-bg-1.png" alt="Мужчина с коробкой">
+                    </picture>
+                    <a class="hide header__box " href="tel:88000801213">
                         <svg class="header__box-svg" aria-label="иконка позвонить">
                             <use xlink:href="images/sprite.svg#phone"></use>
                         </svg>
                     </a>
                 </div>
             </div>
-            <button class="header__sub-btn btn-style">Заказать</button>
+            <button class="header__sub-btn">Заказать</button>
         </div>
     </header>
 
+  
 
 
 

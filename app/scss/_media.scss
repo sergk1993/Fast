@@ -9,6 +9,9 @@
     .header__box-image {
         display: none;
     }
+    .hide {
+        display: none;
+    }
 }
 
 @media (max-width: 790px) {
@@ -73,6 +76,8 @@
     .active-nav {
         right: 0;
     }
+
+    
 }
 
 @media (max-width: 580px) {
@@ -90,9 +95,7 @@
         display: none;
     }
 
-    .header__box-svg {
-        display: none;
-    }
+   
 
     .header__box-img {
         position: absolute;
@@ -127,6 +130,7 @@
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 0;
+        font-weight: 700;
     }
     .header__icons {
         display: none;
@@ -137,4 +141,6 @@
         position: relative;
         z-index: 2;
     }
+
+    
 }
