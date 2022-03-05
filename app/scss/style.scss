@@ -193,7 +193,7 @@
 .about {
     padding-top: 90px;
     padding-bottom: 40px;
-  
+
     counter-reset: counter;
     &__title {
         margin-bottom: 60px;
@@ -231,7 +231,7 @@
     &__box::after {
         content: "0" counter(counter);
         position: absolute;
-        color: #FED100;
+        color: #fed100;
         left: 3px;
         bottom: 0;
         transform: translateY(-50%);
@@ -256,5 +256,51 @@
         line-height: 21px;
     }
 }
+
+/* Конец about */
+
+/* Начало price  */
+.price {
+    padding-top: 50px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+        justify-content: center;
+        gap: 20px 20px;
+    }
+
+    &__box {
+        display: grid;
+        align-content: space-between;
+        padding: 80px 10px;
+        border: 1px solid #0ba397;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    &__lists {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    &__sum {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        background-color: #0ba397;
+    }
+}
+
+/* Конец price  */
 
 @import "media";

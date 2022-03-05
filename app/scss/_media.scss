@@ -29,6 +29,18 @@
         font-size: 16px;
         line-height: 20px;
     }
+
+    .price__title {
+        margin-bottom: 40px;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .price__box {
+        padding: 50px 10px;
+    }
 }
 
 @media (max-width: 790px) {
