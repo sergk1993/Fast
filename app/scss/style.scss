@@ -101,11 +101,11 @@
         background-color: #1f7780;
         z-index: 2;
         transition: all 0.2s ease-out;
-    } 
+    }
 
     &__box:hover::after {
         transform: scale(1.1);
-    }   
+    }
 
     &__box::before {
         content: "";
@@ -134,9 +134,7 @@
         bottom: 23%;
         right: 52%;
         z-index: 10;
-       
     }
-
 
     @keyframes pulse {
         100% {
@@ -190,4 +188,73 @@
 }
 
 /* Главный header конец */
+
+/* Главная about */
+.about {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  
+    counter-reset: counter;
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+        justify-content: center;
+        gap: 70px 80px;
+    }
+
+    &__box {
+        padding-left: 90px;
+        position: relative;
+    }
+    &__box::before {
+        counter-increment: counter;
+        content: "0" counter(counter);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(-50%);
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 61px;
+        z-index: 3;
+    }
+
+    &__box:nth-child(n + 10)::before {
+        counter-increment: counter;
+        content: counter(counter);
+    }
+
+    &__box::after {
+        content: "0" counter(counter);
+        position: absolute;
+        color: #FED100;
+        left: 3px;
+        bottom: 0;
+        transform: translateY(-50%);
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 61px;
+        z-index: 2;
+    }
+
+    &__box:nth-child(n + 10):after {
+        content: counter(counter);
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    &__subtext {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
 @import "media";

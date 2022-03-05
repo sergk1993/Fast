@@ -2,8 +2,8 @@ html {
     box-sizing: border-box;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     box-sizing: inherit;
 }
@@ -17,8 +17,8 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
+  
 }
-
 
 ul {
     padding: 0;
@@ -64,14 +64,17 @@ fieldset {
     list-style: none;
 }
 
-
 footer {
     margin-top: auto;
 }
-
-
 
 /* .btn-style {
     
 } */
 
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
