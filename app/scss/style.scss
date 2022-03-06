@@ -321,14 +321,13 @@
     &__btn:not(:last-child) {
         margin-right: 20px;
     }
-
+    /*  Отступ слайдера начало */
     &__swiper {
         margin-top: 50px;
         display: none;
     }
+    /*  Отступ слайдера конец */
 }
-
-
 
 /* Начало Слайдера */
 
@@ -398,7 +397,7 @@
         height: 100%;
         object-fit: contain;
     }
-    
+
     &__media-info {
         text-align: center;
     }
@@ -414,12 +413,11 @@
         height: 8px;
         background-color: #000;
         opacity: 1;
-       margin-right: 10px;
+        margin-right: 10px;
     }
 
     &-pagination .swiper-pagination-bullet {
-      
-       margin-right: 20px !important;
+        margin-right: 20px !important;
     }
 
     &-pagination .swiper-pagination-bullet-active {
@@ -427,8 +425,6 @@
         height: 10px;
         position: relative;
     }
-
-
 
     &-pagination .swiper-pagination-bullet-active::after {
         content: "";
@@ -443,7 +439,6 @@
     }
 
     /* Пагинация swiper конец*/
-
 
     /* стрелки swiper начало */
     &-button-prev {
@@ -462,8 +457,6 @@
         height: 15px;
     }
     /* стрелки swiper конец */
-
-
 }
 
 .swiper-button-prev::after,
@@ -471,15 +464,66 @@
     display: none;
 }
 
-
 .swiper-show {
     display: block;
 }
 
-
-
 /* Конец Слайдера */
 
 /* Конец autopark */
+
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 420px));
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    &__box { 
+        max-width: 420px;
+    }
+    &__box-title {
+        margin-bottom: 10px;
+    }
+
+    &__data {
+        margin-bottom: 20px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+   &__stars {
+       display: inline-block;
+   }
+
+   &__icon {
+       width: 15px;
+       height: 15px;
+   }
+
+   &__btn {
+       background-color: #0ba397;
+       color: #fff;
+       margin-top: 60px;
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @import "media";

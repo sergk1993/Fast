@@ -48,9 +48,18 @@ window.addEventListener('load', function () {
       currentTab.classList.add('swiper-show');
     });
   });
- /* Swiper end */
+  /* Swiper end */
 
 
 
+  Ellipsis({
+    ellipsis: '…',
+    debounce: 300,
+    responsive: true,
+    className: '.clamp',
+    lines: 3,
+    portrait: null,
+    break_word: false,
+  });
 
 });
