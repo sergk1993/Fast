@@ -655,14 +655,22 @@
         margin-bottom: 60px;
     }
 
+    &__link {
+        transition: color 0.2s ease-in-out;
+    }
+
+    &__link:hover {
+        color: #000;
+    }   
+
     &__lists:not(:last-child) {
-         margin-bottom: 20px;
+        margin-bottom: 20px;
     }
     &__lists::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 17px;
-        background-image: url('../images/map-items.svg');
+        background-image: url("../images/map-items.svg");
         background-repeat: no-repeat;
         background-size: contain;
         width: 15px;
@@ -674,9 +682,7 @@
         display: flex;
         justify-content: flex-end;
         padding-left: 30px;
-
     }
-    
 
     &__icon {
         width: 15px;
@@ -694,5 +700,117 @@
 }
 
 /* Конец map */
+
+/* Начало footer */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #0ba397;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    &__info {
+        max-width: 250px;
+    }
+
+    &__info-title {
+        margin-bottom: 40px;
+    }
+    &__info-agree {
+        display: block;
+    }
+
+    &__info-polit {
+        font-size: 16px;
+        margin-bottom: 20px;
+        display: block;
+        transition: color 0.2s ease-in-out;
+    }
+
+    &__info-polit:hover {
+        color: #fff;
+    }
+
+    &__info-agree {
+        transition: color 0.2s ease-in-out;
+    }
+    &__info-agree:hover {
+        color: #fff;
+    }
+
+    &__lists {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    &__nav-link {
+        font-weight: 600;
+        transition: color 0.2s ease-in-out;
+    }
+    &__nav-link:hover {
+        color: #fff;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        max-width: 200px;
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        transition: fill 0.3s ease-in-out;
+    }
+    &__icon:hover {
+        fill: #fff;
+    }
+
+    &__maill {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        text-decoration: underline;
+        transition: color 0.3s ease-in-out;
+    }
+    &__maill:hover {
+        color: #fff;
+    }
+
+    &__calls {
+        text-align: center;
+    }
+
+    &__calls-btn {
+        margin-bottom: 10px;
+        border-color: #333;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__calls-btn:hover {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    &__calls-phone {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &__calls-phone:hover {
+      color: #fff;
+    }
+}
+
+/* Конец footer */
 
 @import "media";
