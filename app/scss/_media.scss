@@ -56,6 +56,16 @@
     .swiper-button-next {
         display: none;
     }
+
+    .order__lists {
+        display: block;
+    }
+
+    .order__list {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 790px) {
@@ -134,8 +144,19 @@
     .park-pagination {
         display: block;
     }
-}
 
+    .order__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .order__subtitle {
+        font-size: 15px;
+    }
+
+   
+}
 
 @media (max-width: 580px) {
     .header__box-image {

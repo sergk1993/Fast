@@ -472,7 +472,9 @@
 
 /* Конец autopark */
 
+/* Начало отзывы */
 .reviews {
+    background-color: #0ba397;
     padding-top: 50px;
     padding-bottom: 50px;
     &__title {
@@ -484,10 +486,9 @@
         grid-template-columns: repeat(auto-fill, minmax(250px, 420px));
         justify-content: center;
         gap: 20px;
-
     }
 
-    &__box { 
+    &__box {
         max-width: 420px;
     }
     &__box-title {
@@ -499,31 +500,123 @@
         margin-right: 5px;
         display: inline-block;
     }
-   &__stars {
-       display: inline-block;
-   }
+    &__stars {
+        display: inline-block;
+    }
 
-   &__icon {
-       width: 15px;
-       height: 15px;
-   }
+    &__icon {
+        width: 15px;
+        height: 15px;
+    }
 
-   &__btn {
-       background-color: #0ba397;
-       color: #fff;
-       margin-top: 60px;
-   }
-
+    &__btn {
+        background-color: #0ba397;
+        color: #fff;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
 }
 
+/* Конецу отзывы */
+
+/* Начало order */
+.order {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+    }
 
 
+    &__lists {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__list {
+        max-width: 300px;
+        width: 100%;
+    }
 
+    &__input {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        width: 100%;
+        padding: 10px 10px 10px 5px;
+        border: none;
+        border-bottom: 1px solid #333;
+    }
+    &__input:not(:last-child) {
+        margin-right: 70px;
+    }
 
+    &__input::placeholder {
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 10px;
+    }
 
+    &__btn {
+        background-color: #0ba397;
+        margin-left: 0;
+        color: #fff;
+    }
 
+    &__label {
+        position: absolute;
+        bottom: -35px;
+        font-size: 12px;
+        line-height: 15px;
+        padding-left: 25px;
+        cursor: pointer;
+    }
 
+    &__check:checked + .order__checkBox {
+        background-image: url("../images/tick.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 7px;
+    }
+    &__check:focus + .order__checkBox {
+        outline: 3px solid rgb(255, 0, 0);
+        border-radius: 2px;
+    }
+    &__check:checked:focus + .order__checkBox {
+        outline: 3px solid #02b411;
+        border-radius: 2px;
+    }
 
+    &__check {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    &__checkBox {
+        position: absolute;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #333;
+    }
+}
 
+/* Конец order */
 
 @import "media";
