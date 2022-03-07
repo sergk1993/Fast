@@ -489,12 +489,14 @@
                             <legend class="visually-hidden">Форма перезвонить</legend>
 
                             <ul class="order__lists list-reset">
-                                <li class="order__list"><input class="order__input" name="name" type="text" placeholder="Ваше имя"></li>
-                                <li class="order__list"><input class="order__input" name="phone" type="text" placeholder="Ваш телефон"></li>
+                                <li class="order__list"><input class="order__input" name="name" type="text"
+                                        placeholder="Ваше имя"></li>
+                                <li class="order__list"><input class="order__input" name="phone" type="text"
+                                        placeholder="Ваш телефон"></li>
                                 <li class="order__list">
                                     <button class="order__btn btn-style">Перезвонить мне</button>
                                     <label class="order__label">
-                                        <input class="order__check" type="checkbox" >
+                                        <input class="order__check" type="checkbox">
                                         <span class="order__checkBox"></span>
                                         Даю согласие на обработку данных
                                     </label>
@@ -513,7 +515,56 @@
 
         </section>
 
+        <section class="map container-fluid">          
+                <div class="map__box">
+                    <iframe class="map__hide"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.2584989584191!2d37.724881585550136!3d55.68839670896341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab4f71031c4bd%3A0xbc69e023a249caa4!2sGooGooGaGa!5e0!3m2!1sru!2skz!4v1646624093671!5m2!1sru!2skz"
+                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
 
+                <div class="map__box-icon">
+                    <h3 class="map__title">Fast</h3>
+                    <ul class="map__list">
+                        <li class="map__lists">Москва, Волгоградский пр-т, 38
+                        </li>
+                        <li class="map__lists">
+                            <a href="tel:88000801213">8 (800)-080-12-13</a>
+                        </li>
+                        <li class="map__lists">
+                            <a class="map__link" href="mailto:hello@movee.ru">hello@movee.ru</a>
+                        </li>
+                    </ul>
+                    <div class="map__icons">
+                        <a class="map__icons-link" href="https://www.youtube.com">
+                            <svg class="map__icon">
+                                <use xlink:href="images/sprite.svg#youtube"></use>
+                            </svg>
+                        </a >
+                        <a class="map__icons-link" href="https://vk.com">
+                            <svg class="map__icon">
+                                <use xlink:href="images/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+
+                        <a class="map__icons-link" href="https://ru-ru.facebook.com">
+                            <svg class="map__icon">
+                                <use xlink:href="images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="map__icons-link" href="https://www.instagram.com">
+                            <svg class="map__icon">
+                                <use xlink:href="images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+        </section>
+
+
+        
     </main>
 
 

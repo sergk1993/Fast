@@ -540,7 +540,6 @@
         line-height: 37px;
     }
 
-
     &__lists {
         display: flex;
         align-items: flex-end;
@@ -618,5 +617,82 @@
 }
 
 /* Конец order */
+
+/* Начало map */
+
+.map {
+    position: relative;
+    color: #fff;
+    padding-top: 50px;
+
+    &__hide {
+        width: 100%;
+        height: 100%;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    &__box {
+        width: 100%;
+        height: 500px;
+        pointer-events: none;
+    }
+
+    &__box-icon {
+        position: absolute;
+        padding: 40px 40px;
+        background-color: #0ba397;
+        border-radius: 5px;
+        top: 60%;
+        transform: translateY(-50%);
+        left: 20%;
+    }
+
+    &__list {
+        margin-bottom: 60px;
+    }
+
+    &__lists:not(:last-child) {
+         margin-bottom: 20px;
+    }
+    &__lists::before {
+        content: '';
+        position: absolute;
+        left: 17px;
+        background-image: url('../images/map-items.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 15px;
+        height: 15px;
+        margin-top: 3px;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 30px;
+
+    }
+    
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+        fill: #fff;
+        transition: fill 0.2s ease-in-out;
+    }
+    &__icon:hover {
+        fill: #000;
+    }
+
+    &__icons-link:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+/* Конец map */
 
 @import "media";
