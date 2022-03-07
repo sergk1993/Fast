@@ -1,5 +1,5 @@
 @media (max-width: 1100px) {
-    .header-container {
+    .header__wrapper {
         background-image: none;
     }
     .header-top__nav-link:not(:last-child) {
@@ -130,7 +130,7 @@
     .header-nav {
         background-color: #0b7179;
         position: absolute;
-        max-width: 500px;
+        max-width: 320px;
         width: 100%;
         top: 0;
         right: -150%;
@@ -218,6 +218,9 @@
     .header {
         padding-bottom: 50px;
     }
+    .header-reviews {
+        padding-bottom: 0;
+    }
 
     .header__wrapper {
         justify-content: center;
@@ -262,6 +265,9 @@
     }
     .modal__inp-name {
         font-size: 12px;
+    }
+    .modal__close {
+        top: 10px;
     }
 
 }

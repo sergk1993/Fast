@@ -1,17 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Cайт компании по перевозке грузов">
-        <meta name="theme-color" content="#0ba397" />
-        <title>Fast</title>
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="css/style.min.css">
-    </head>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cайт компании по перевозке грузов">
+    <meta name="theme-color" content="#0ba397" />
+    <title>Reviews</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
 <body>
-    
+    <div class="block___overflow">
+        <div class="modal">
+            <form class="modal__form" method="post">
+                <div class="modal__close">
+                    <span class="modal__close-line"></span>
+                    <span class="modal__close-line"></span>
+                </div>
+
+                <fieldset class="modal__field">
+                    <legend class="visually-hidden">Форма перезвонить</legend>
+                    <!-- <input class="" type="text" placeholder="Введите имя" required>   -->
+                    <div class="modal__group">
+                        <input class="modal__inp" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="modal__bar"></span>
+                        <label class="modal__inp-name">Имя</label>
+                    </div>
+                    <div class="modal__group">
+                        <input class="modal__inp" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="modal__bar"></span>
+                        <label class="modal__inp-name">Телефон</label>
+                    </div>
+
+                    <div class="modal__group">
+                        <textarea class="modal__inp  modal__textarea" required></textarea>
+                        <span class="highlight"></span>
+                        <span class="modal__bar"></span>
+                        <label class="modal__inp-name">Текст</label>
+                    </div>
+                    <!-- <input class="modal__inp" type="text" placeholder="Введите телефон" required> -->
+
+                    <button class="modal__btn btn btn">Отправить</button>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <header class="header header-reviews">
+            <div class="container header-container">
+                <div class="header-top">
+                    <a class="header-top__link" href="index.html">Fast</a>
+                    <nav class="header-nav">
+                        <a class="header-nav__link" href="index.html">Главная</a>
+                        <a class="header-nav__link" href="#reviews">Отзывы</a>
+                    </nav>
+                    <a class="header-top__phone" href="tel:88000801213">8(800)-080-12-13</a>
+                    <button class="header-btn" aria-label="Кнопка выезжающего меню">
+                        <span class="header-btn__line"></span>
+                        <span class="header-btn__line"></span>
+                        <span class="header-btn__line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <section class="reviews reviews-second" id="reviews">
+            <div class="container">
+                <h2 class="reviews__title title">Отзывы</h2>
+
+                <div class="reviews__wrapper">
+                    <div class="reviews__box">
+                        <h3 class="reviews__box-title">Ирина</h3>
+                        <time class="reviews__data" datetime="2022-03-24">
+                            24.03.2022
+                        </time>
+                        <div class="reviews__stars">
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+
+                        </div>
+                        <p class="reviews__text ">Обращение к вам за помощью в переезде оставило только
+                            положительные
+                            впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с
+                            заездом
+                            во двор, он проявил себя как компетентный
+                            и профессиональный сотрудник, за что ему огромное спасибо
+                        </p>
+                    </div>
+
+                    <div class="reviews__box">
+                        <h3 class="reviews__box-title">Ирина</h3>
+                        <time class="reviews__data" datetime="2022-03-24">
+                            24.03.2022
+                        </time>
+                        <div class="reviews__stars">
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+
+                        </div>
+                        <p class="reviews__text ">Хочу выразить благодарность данной организации за оперативную
+                            работу,вся работа проделана без нариканий,большой плюс все по факту оформление договора
+                            лично,обсуждение всех нюансов.Надежные ребята,организация на высшем уровне.
+                        </p>
+                    </div>
+
+
+                    <div class="reviews__box">
+                        <h3 class="reviews__box-title">Светлана Васильевна </h3>
+                        <time class="reviews__data" datetime="2022-09-13">
+                            13.09.2021
+                        </time>
+                        <div class="reviews__stars">
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                            </svg>
+
+                        </div>
+                        <p class="reviews__text ">Не знаю, как со стороны соискателей, но со стороны заказчика
+                            все
+                            гуд.
+                            Не могу скахать, что есть компании лучше, но и то что есть компании хуже тоже не могу.
+                            Был
+                            опыт работы с разными компаниями. С этой работаем, потому что удобно.
+                        </p>
+                    </div>
+                    <div class="reviews__box">
+                        <h3 class="reviews__box-title">Ольга Петрова</h3>
+                        <time class="reviews__data" datetime="2022-11-11">
+                            11.11.2021
+                        </time>
+                        <div class="reviews__stars">
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                                <use xlink:href="images/sprite.svg#star-2"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                            </svg>
+                            <svg class="reviews__icon">
+                                <use xlink:href="images/sprite.svg#star-1"></use>
+                            </svg>
+
+                        </div>
+                        <p class="reviews__text ">Все просто ужасно, не верьте, вызывал грузчиков с машиной,
+                            позвонили
+                            заказ подтвердили..- но никто не приехал, даже не позвонили, день - псу под хвост...,
+                            звонил
+                            2 часа, эти твари даже трубу не подняли
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer footer-reviews">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__info">
+                        <h3 class="footer__info-title">Fast</h3>
+                        <a class="footer__info-polit" href="#as">Политика
+                            конфиденциальнности</a>
+                        <a class="footer__info-agree" href="#sa">Соглашение на обработку персональных данных</a>
+                    </div>
+
+                    <nav class="footer__nav">
+                        <ul class="footer__list list-reset">
+                            <li class="footer__lists"><a class="footer__nav-link" href="#reviews">Отзывы</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__links">
+                        <div class="footer__icons">
+                            <a class="footer__icons-link" href="https://www.youtube.com">
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                            <a class="footer__icons-link" href="https://vk.com">
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+
+                            <a class="footer__icons-link" href="https://ru-ru.facebook.com">
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a class="footer__icons-link" href="https://www.instagram.com">
+                                <svg class="footer__icon">
+                                    <use xlink:href="images/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <a class="footer__maill" href="mailto:hello@movee.ru">hello@movee.ru</a>
+                    </div>
+
+                    <div class="footer__calls">
+                        <button class="btn-style-line footer__calls-btn btn ">Обратный звонок</button>
+                        <a class="footer__calls-phone" href="tel:88000801213">8 (800)-080-12-13</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="js/main.min.js"></script>
 </body>
+
 </html>

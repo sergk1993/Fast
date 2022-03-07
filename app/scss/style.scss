@@ -37,7 +37,11 @@
     &-top {
         display: flex;
         align-items: center;
-        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &-nav {
+        overflow-x: hidden;
     }
     &-top__link {
         margin-right: auto;
@@ -73,16 +77,15 @@
     background-color: #0ba397;
     overflow: hidden;
     position: relative;
-    &-container {
-        background-image: url("../images/car-1.png");
-        background-repeat: no-repeat;
-        background-position: 100%;
-        background-size: 700px;
-    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        background-image: url("../images/car-1.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: 700px;
     }
     &__box-image {
         position: relative;
@@ -485,7 +488,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 420px));
         justify-content: center;
-        gap: 20px;
+        gap: 30px 20px;
     }
 
     &__box {
@@ -511,9 +514,15 @@
 
     &__btn {
         background-color: #0ba397;
-        color: #fff;
+        color: #000;
+        border-color: #000;
         margin: 0 auto;
         margin-top: 60px;
+        transition: all 0.4s ease-in-out;
+    }
+    &__btn:hover {
+        color: #fff;
+        border-color: #fff;
     }
 }
 
@@ -721,6 +730,7 @@
 
     &__info-title {
         margin-bottom: 40px;
+        color: #fff;
     }
     &__info-agree {
         display: block;
@@ -731,17 +741,19 @@
         margin-bottom: 20px;
         display: block;
         transition: color 0.2s ease-in-out;
+        color: #fff;
     }
 
     &__info-polit:hover {
-        color: #fff;
+        color: #000;
     }
 
     &__info-agree {
         transition: color 0.2s ease-in-out;
+        color: #fff;
     }
     &__info-agree:hover {
-        color: #fff;
+        color: #000;
     }
 
     &__lists {
@@ -752,9 +764,10 @@
     &__nav-link {
         font-weight: 600;
         transition: color 0.2s ease-in-out;
+        color: #fff;
     }
     &__nav-link:hover {
-        color: #fff;
+        color: #000;
     }
 
     &__icons {
@@ -768,9 +781,10 @@
         width: 18px;
         height: 18px;
         transition: fill 0.3s ease-in-out;
+        fill: #fff;
     }
     &__icon:hover {
-        fill: #fff;
+        fill: #000;
     }
 
     &__maill {
@@ -779,9 +793,10 @@
         font-weight: 600;
         text-decoration: underline;
         transition: color 0.3s ease-in-out;
+        color: #fff;
     }
     &__maill:hover {
-        color: #fff;
+        color: #000;
     }
 
     &__calls {
@@ -790,13 +805,14 @@
 
     &__calls-btn {
         margin-bottom: 10px;
-        border-color: #333;
+        border-color: #fff;
         transition: all 0.3s ease-in-out;
+        color: #fff;
     }
 
     &__calls-btn:hover {
-        color: #fff;
-        border-color: #fff;
+        color: #000;
+        border-color: #000;
     }
 
     &__calls-phone {
@@ -804,15 +820,17 @@
         line-height: 24px;
         font-weight: 600;
         transition: color 0.3s ease-in-out;
+        color: #fff;
     }
 
     &__calls-phone:hover {
-        color: #fff;
+        color: #000;
     }
 }
 
 /* Конец footer */
 
+/* Модальное окно начало */
 .modal {
     position: fixed;
     height: 100%;
@@ -855,7 +873,7 @@
         background-color: #fff;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%) rotate(-135deg);
+        transform: translate(-50%, -50%) rotate(-135deg);
     }
 
     &__close-line:nth-child(2) {
@@ -865,7 +883,7 @@
         background-color: #fff;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%) rotate(135deg);
+        transform: translate(-50%, -50%) rotate(135deg);
     }
 
     &__group {
@@ -980,5 +998,31 @@
     opacity: 1;
     visibility: visible;
 }
+/* Модальное окно конец */
+
+/* клас для отмены скрола у навигации начало */
+.block___overflow {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* клас для отмены скрола у навигации начало */
+
+/* другая страница с отзывами начало */
+
+.footer-reviews {
+    background-color: #0ba397;
+}
+.reviews-second {
+    background-color: #fff;
+}
+
+.header-reviews {
+    overflow: visible;
+}
+/* другая страница с отзывами конец */
 
 @import "media";

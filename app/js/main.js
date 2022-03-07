@@ -63,7 +63,7 @@ window.addEventListener('load', function () {
   });
   /* Обрезание строки отзывов  конец */
 
-
+/* модальное окно начало */
   const modalBtns = document.querySelectorAll('.btn');
   const modalsBg = document.querySelector('.modal');
   const modalsForm = document.querySelector('.modal__form');
@@ -87,6 +87,25 @@ window.addEventListener('load', function () {
         modalsForm.classList.remove('modal-active-1');
       }
   });
+/* модальное окно конец */
+
+
+
+/* прокрутка по якорям начало */
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function(event) {
+    event.preventDefault();
+    const blockId = anchor.getAttribute('href');
+
+    document.querySelector('' + blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  })
+}
+/* прокрутка по якорям начало */
 
 
 });
