@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 
+
 .header-btn {
     position: absolute;
     display: none;
@@ -75,9 +76,8 @@
 
     /* Главный header */
     background-color: #0ba397;
-    overflow: hidden;
     position: relative;
-
+    overflow: hidden;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -1000,29 +1000,9 @@
 }
 /* Модальное окно конец */
 
-/* клас для отмены скрола у навигации начало */
-.block___overflow {
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
-/* клас для отмены скрола у навигации начало */
 
-/* другая страница с отзывами начало */
 
-.footer-reviews {
-    background-color: #0ba397;
-}
-.reviews-second {
-    background-color: #fff;
-}
-
-.header-reviews {
-    overflow: visible;
-}
-/* другая страница с отзывами конец */
-
+@import "reviews";
 @import "media";
+@import "media-reviews";
